@@ -1,0 +1,4 @@
+/app
+/enviroment/data/logs
+.env
+.DS_Store
