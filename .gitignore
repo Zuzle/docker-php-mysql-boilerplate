@@ -1,4 +1,5 @@
 /app
 /enviroment/data/logs
+/enviroment/nginx/app.conf
 .env
 .DS_Store

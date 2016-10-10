@@ -7,6 +7,7 @@ Basic initialization
 ---
 ```bash
 cp .env.dist .env
+cp enviroment/nginx/app.conf.dist enviroment/nginx/app.conf
 ```
 
 ```bash
