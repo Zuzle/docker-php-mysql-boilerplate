@@ -4,7 +4,8 @@ MAINTAINER Valentyn Kotelnikov <zuzleadmin@gmail.com>
 
 RUN apt-get update && apt-get install -y \
     git \
-    unzip
+    unzip \
+    libxml2-dev
 
 # composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -17,6 +18,7 @@ RUN "date"
 
 # extensions
 RUN docker-php-ext-install pdo pdo_mysql
+RUN docker-php-ext-install soap
 
 # console aliases
 RUN echo 'alias sf="php app/console"' >> ~/.bashrc
